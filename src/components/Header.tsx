@@ -34,14 +34,19 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Zone 1: Brand Wordmark with Active Branch Selector */}
           <div className="flex items-center gap-2.5 sm:gap-4 shrink-0">
             <a
-              href="#"
+              href="./"
               onClick={(e) => {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  try {
+                    window.history.pushState(null, '', window.location.pathname);
+                  } catch {}
+                }
               }}
-              className="inline-flex items-center tap-target py-1 cursor-pointer"
-              title="3:16 GYM — На головну"
-              aria-label="3:16 GYM — На головну"
+              className="inline-flex items-center tap-target py-1 cursor-pointer select-none"
+              title="3:16 GYM — Головна сторінка"
+              aria-label="3:16 GYM — Головна сторінка"
             >
               <Logo size="md" />
             </a>

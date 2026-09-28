@@ -55,7 +55,23 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Brand Info */}
           <div className="md:col-span-5 space-y-3">
             <div className="flex items-center gap-2">
-              <Logo size="sm" />
+              <a
+                href="./"
+                onClick={(e) => {
+                  if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    try {
+                      window.history.pushState(null, '', window.location.pathname);
+                    } catch {}
+                  }
+                }}
+                className="inline-flex items-center tap-target cursor-pointer group"
+                title="3:16 GYM — Нагору"
+                aria-label="3:16 GYM — Нагору"
+              >
+                <Logo size="sm" />
+              </a>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
               Мережа спортивних клубів 3:16 GYM. Професійні тренажери, зона вільних ваг, сертифіковані тренери та якісний фітнес-бар.

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1815" />
+      <stop offset="100%" stop-color="#090807" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB326" />
+      <stop offset="50%" stop-color="#FFA303" />
+      <stop offset="100%" stop-color="#FF7A00" />
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="64" fill="url(#logoBg)" />
+  <rect x="8" y="8" width="496" height="496" rx="56" fill="none" stroke="#FFA303" stroke-opacity="0.2" stroke-width="4" />
+
+  <!-- Center Emblem -->
+  <g transform="translate(100, 100) scale(5.8)">
+    <rect x="20" y="2" width="5.5" height="38" rx="2.75" fill="url(#gold)" />
+    <line x1="20" y1="21" x2="5" y2="9" stroke="url(#gold)" stroke-width="5.5" stroke-linecap="round" />
+    <line x1="20" y1="21" x2="3" y2="21" stroke="url(#gold)" stroke-width="5.5" stroke-linecap="round" />
+    <line x1="20" y1="21" x2="5" y2="33" stroke="url(#gold)" stroke-width="5.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Typography 3:16 GYM -->
+  <g transform="translate(256, 395)" text-anchor="middle">
+    <text font-family="Montserrat, Manrope, system-ui, sans-serif" font-weight="900" font-size="60" fill="#FFFFFF" letter-spacing="2">3:16</text>
+    <text y="50" font-family="Montserrat, Manrope, system-ui, sans-serif" font-weight="900" font-size="34" fill="#FFA303" letter-spacing="10">GYM</text>
+  </g>
+</svg>

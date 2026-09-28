@@ -1,0 +1,29 @@
+{
+  "name": "3:16 GYM — Мережа спортивних клубів",
+  "short_name": "3:16 GYM",
+  "description": "Сучасні спортивні клуби 3:16 GYM у м. Сміла та м. Золотоноша. Тренажери, персональні тренери, безліміт.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0B0A09",
+  "theme_color": "#FFA303",
+  "icons": [
+    {
+      "src": "./favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
