@@ -1,0 +1,6 @@
+{
+  "name": "Vektor Digital — Mobile-First Web Studio",
+  "description": "Сучасна студія веб-розробки та цифрового дизайну. Mobile-first архітектура, сувора валідація інтерактивних форм та бездоганний адаптивний інтерфейс.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
