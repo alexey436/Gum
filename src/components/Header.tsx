@@ -33,7 +33,16 @@ export const Header: React.FC<HeaderProps> = ({
           
           {/* Zone 1: Brand Wordmark with Active Branch Selector */}
           <div className="flex items-center gap-2.5 sm:gap-4 shrink-0">
-            <a href="/" className="inline-flex items-center tap-target py-1">
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="inline-flex items-center tap-target py-1 cursor-pointer"
+              title="3:16 GYM — На головну"
+              aria-label="3:16 GYM — На головну"
+            >
               <Logo size="md" />
             </a>
 
